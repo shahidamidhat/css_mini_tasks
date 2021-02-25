@@ -1,0 +1,36 @@
+<!--Give the <div> element an image border using the image "border.png". Slice the image at 30px and stretch it.-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .wrapper {
+                width: 400px;
+                height: 300px;
+                }
+
+            div > div {
+                width: 300px;
+                height: 200px;
+                border-width: 30px;
+                border-style: solid;
+                border-image: url(https://interactive-examples.mdn.mozilla.net/media/examples/border-diamonds.png);
+                border-image-slice: 30 fill;
+                border-image-repeat: round;
+                }
+
+            li {
+                display: flex;
+                place-content: center;
+                }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div></div>
+          </div>
+    </body>
+    </html>
